@@ -36,11 +36,11 @@ function LandingPage() {
             <button className="bg-green-500 py-3 px-0 rounded-xl font-poppins-bold hover:text-white w-full">
               Log In
             </button>
-            <span className="text-red-500 font-poppins text-sm mt-3 cursor-pointer">
+            <span className="text-green-500 font-poppins text-sm mt-3 cursor-pointer">
               Forgot your password?
             </span>
           </div>
-          <div className="flex mt-10 justify-center border-t-8 pt-3 bg-transparent">
+          <div className="flex mt-6 justify-center">
             <span className="font-poppins">Don't have an account?</span>
           </div>
           <div className="flex mt-3 flex-col gap-x-8 md:gap-y-2">
