@@ -53,8 +53,8 @@ function LandingPage() {
             <span className="font-poppins text-xs">Don't have an account?</span>
           </div>
           <div className="flex mt-3 flex-col gap-x-8 md:gap-y-2">
-            <button className="bg-green-500 hover:bg-green-700 rounded-xl px-10 py-3 text-sm font-poppins-bold  hover:text-white delay-1500 duration-100 ease-in-out">
-              Apply as Admin
+            <button className="bg-green-500 hover:bg-green-700 rounded-xl px-10 py-3 text-sm font-poppins-bold  hover:text-white w-full delay-1500 duration-100 ease-in-out">
+              Request to Admin
             </button>
           </div>
         </div>
