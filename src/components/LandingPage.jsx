@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import DashBoard from "./DashBoard";
 
 function LandingPage() {
+  const navigate = useNavigate();
+
+  const navigateToDashBoard = () => {
+    navigate("/dashboard");
+  };
   return (
     <div className="bg-green-100 flex flex-row items-center justify-around h-screen w-screen">
       <div className="fixed top-0 left-0">
@@ -15,7 +22,6 @@ function LandingPage() {
         <img
           className=" sm:h-40 h-44 md:h-72 mt-30 md:mt-0 lg:mt-0 sm:mt-0"
           src="/src/assets/images/crops.png"
-          // src="https://lms-sg-application-bucket.s3.ap-southeast-1.amazonaws.com/public/prd/LAF_Text.png"
         />
       </div>
       <div className="flex items-center">
@@ -42,7 +48,10 @@ function LandingPage() {
             </div>
           </div>
           <div>
-            <button className="bg-green-500 hover:bg-green-700 py-3 px-10 rounded-xl text-sm font-poppins-bold hover:text-white w-full delay-1500 duration-100 ease-in-out">
+            <button
+              onClick={navigateToDashBoard}
+              className="bg-green-500 hover:bg-green-700 py-3 px-10 rounded-xl text-sm font-poppins-bold hover:text-white w-full delay-1500 duration-100 ease-in-out"
+            >
               Log In
             </button>
             <span className="text-green-500 font-poppins text-sm mt-3 cursor-pointer">
