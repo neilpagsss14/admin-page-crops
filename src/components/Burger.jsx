@@ -10,7 +10,7 @@ const Burger = () => {
       <div className="block lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          className="flex items-center px-10 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
         >
           {isOpen ? (
             <XIcon className="h-6 w-6" aria-hidden="true" />
