@@ -18,16 +18,17 @@ function DashBoard() {
     <div className="bg-green-100 relative">
       <Burger isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <nav
-        className={`bg-green-200 shadow-2xl  ${
+        className={`bg-green-200 shadow-2xl ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } lg:w-64 lg:fixed lg:left-0 h-screen lg:h-full w-full flex flex-col px-2`}
       >
         <div className="hidden md:flex flex-col justify-between">
           <div className="z-50">
-            <span className="flex scale-[0.3]">
+            <span className="absolute scale-[0.35] origin-top flex-row justify-center">
               <img src="/src/assets/images/crops.png" />
             </span>
-            <div className="border-t-2 border-green-500 mb-3"></div>
+
+            <div className="border-t-2 border-green-500 mb-3 mt-32"></div>
             <div className="flex flex-col gap-3">
               <a href="/dashboard">
                 <div class="py-2 pl-3 rounded-md cursor-pointer hover:bg-green-100 bg-green-500 delay-100 duration-300 ease-in-out">
@@ -86,7 +87,7 @@ function DashBoard() {
                 </div>
               </a>
               <div class=" border-t-2 border-green-500 mb-3"></div>
-              <a href="/dashboard">
+              <a href="/">
                 <div class="py-2 pl-3 rounded-md cursor-pointer hover:bg-green-100 bg-green-500 delay-100 duration-300 ease-in-out">
                   <div class=" flex items-center">
                     <div class="flex items-center">
