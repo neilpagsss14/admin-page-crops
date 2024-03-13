@@ -1,6 +1,6 @@
 import React from "react";
 
-const Notifications = () => {
+const HomeIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ const Notifications = () => {
   );
 };
 
-export default Notifications;
+export default HomeIcon;

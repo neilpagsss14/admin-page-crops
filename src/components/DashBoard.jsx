@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Burger from "./Burger";
-import Notifications from "../assets/svg/Notifications";
-import SettingsIcon from "../assets/svg/SettingsIcon";
-import LogOutIcon from "../assets/svg/LogOutIcon";
+import BurgerIcon from "../assets/svg/BurgerIcon";
+
+import Sidebar from "./Sidebar";
 
 function DashBoard() {
-  const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const navigateToLandingPage = () => {
     navigate("/");
@@ -20,84 +20,14 @@ function DashBoard() {
   return (
     <div className="bg-green-100 relative">
       <div>
-        <Burger isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-        <nav
-          className={`bg-green-200 shadow-2xl ${
-            isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-          } lg:w-64 lg:fixed lg:left-0 h-screen lg:h-full w-full flex flex-col px-2`}
-        >
-          <div className="hidden md:flex flex-col justify-between">
-            <div className="z-50">
-              {/* <span className="absolute scale-[0.35] origin-top flex-row justify-center"> */}
-              <div className="flex pt-1 pl-4">
-                <img width={60} src="/src/assets/images/crops.png" />
-                {/* <img src="/src/"> */}
-              </div>
-              {/* </span> */}
-
-              <div className="border-t-2 border-green-500 mb-3 mt-32"></div>
-              <div className="flex flex-col gap-3">
-                <a href="/dashboard">
-                  <div class="py-2 pl-3 rounded-md cursor-pointer hover:bg-green-100 bg-green-500 delay-100 duration-300 ease-in-out">
-                    <div class=" flex items-center">
-                      <div class="flex items-center">
-                        <Notifications />
-                      </div>
-                      <span class=" text-sm pl-2 font-bold text-black font-poppins">
-                        Dashboard
-                      </span>
-                    </div>
-                  </div>
-                </a>
-                <div class=" border-t-2 border-green-500 mb-3"></div>
-                <a href="/dashboard">
-                  <div class="py-2 pl-3 rounded-md cursor-pointer hover:bg-green-100 bg-green-500 delay-100 duration-300 ease-in-out">
-                    <div class=" flex items-center">
-                      <div class="flex items-center">
-                        <SettingsIcon />
-                      </div>
-                      <span class=" text-sm pl-2 font-bold text-black font-poppins">
-                        Settings
-                      </span>
-                    </div>
-                  </div>
-                </a>
-                <div class=" border-t-2 border-green-500 mb-3"></div>
-                <a href="/">
-                  <div class="py-2 pl-3 rounded-md cursor-pointer hover:bg-green-100 bg-green-500 delay-100 duration-300 ease-in-out">
-                    <div class=" flex items-center">
-                      <div class="flex items-center">
-                        <LogOutIcon />
-                      </div>
-                      <span class=" text-sm pl-2 font-bold text-black font-poppins">
-                        Log out
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <Sidebar toggleOpen={isSidebarOpen} />
         <button
           onClick={toggleSidebar}
           className={`bg-transparent absolute py-5 px-5 w-12 h-16 transition-transform ${
             isSidebarOpen ? "left-[255px]" : "left-0"
           }`}
         >
-          <svg
-            width="40"
-            height="20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M3.125 8.333V6.25h18.75v2.083H3.125zm0 5.209h18.75v-2.084H3.125v2.084zm0 5.208h18.75v-2.083H3.125v2.083z"
-              fill="#00448C"
-            ></path>
-          </svg>
+          <BurgerIcon />
         </button>
         <nav className="bg-green-200 shadow-lg flex flex-row h-20 items-center justify-between px-14">
           <div>
@@ -162,9 +92,7 @@ function DashBoard() {
       </div>
 
       <div className="px-20 -z-10 h-screen py-20">
-        <div className="bg-green-200 w-60 h-60 py-4 shadow-2xl text-center font-poppins-bold justify-center rounded-lg">
-          FLUTTER
-        </div>
+        <div className="bg-green-200 w-60 h-60 py-4 shadow-2xl text-center font-poppins-bold justify-center rounded-lg"></div>
       </div>
     </div>
   );
