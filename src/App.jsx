@@ -7,13 +7,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route element={<LandingPage />}> */}
         {publicRoutes.map((route, key) => (
           <Route path={route.path} element={route.element} key={key} />
         ))}
-        {/* </Route> */}
-        {/* <Route path="/" element={<LandingPage />} />
-        <Route path="/dashboard" element={<DashBoard />} /> */}
       </Routes>
     </Router>
   );
