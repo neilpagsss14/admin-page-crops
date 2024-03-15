@@ -6,31 +6,28 @@ import NavBar from "./NavBar";
 import Sidebar from "./Sidebar";
 
 function DashBoard() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false); // nav
 
-  const navigate = useNavigate();
+  const [sidebarOpen, setSidebarOpen] = useState(false); // sidebar
 
-  const navigateToLandingPage = () => {
-    navigate("/");
+  const toggleSideBar = () => {
+    setIsNavOpen(!isNavOpen);
+    setSidebarOpen(false);
   };
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+  const closeSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+    setIsNavOpen(false);
   };
 
   return (
     <div>
-      {/* <Sidebar toggleOpen={isSidebarOpen} /> */}
-      <NavBar />
-      <Side />
-      {/* <button
-        onClick={toggleSidebar}
-        className={`bg-transparent absolute py-5 px-5 w-12 h-16 transition-transform ${
-          isSidebarOpen ? "left-[255px]" : "left-0"
-        }`}
-      >
-        {BurgerIcon()}
-      </button> */}
+      <NavBar toggleSideBar={toggleSideBar} />
+      <Side
+        closeSidebar={closeSidebar}
+        sidebarOpen={sidebarOpen}
+        isNavOpen={isNavOpen}
+      />
     </div>
   );
 }

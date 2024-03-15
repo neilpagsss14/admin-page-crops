@@ -1,7 +1,10 @@
-import React from "react";
+import { React, useState } from "react";
 import { BurgerIcon, MessageIcon, NotificationIcon } from "../assets/svg";
 
-function NavBar() {
+function NavBar({ toggleSideBar }) {
+  const navigateToLandingPage = () => {
+    navigate("/");
+  };
   return (
     <div className="bg-green-200 w-full shadow-lg flex flex-row items-center justify-between px-5 h-16 ">
       <button
@@ -9,7 +12,8 @@ function NavBar() {
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
         type="button"
-        class="flex items-center justify-start text-sm text-gray-500 rounded-lg float-left"
+        onClick={toggleSideBar}
+        className="flex items-center justify-start text-sm text-gray-500 rounded-lg float-left"
       >
         {BurgerIcon()}
       </button>
@@ -26,7 +30,7 @@ function NavBar() {
             </button>
           </div>
           <button
-            // onClick={navigateToLandingPage}
+            onClick={navigateToLandingPage}
             className="bg-green-500 hover:bg-[#F3ED59] px-5 items-center rounded-md h-10 text-sm font-poppins-bold flex"
           >
             Track Here
