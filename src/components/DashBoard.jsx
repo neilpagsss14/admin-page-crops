@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Side from "./Side";
-import { BurgerIcon } from "../assets/svg";
 import NavBar from "./NavBar";
-import Sidebar from "./Sidebar";
+import MainMenu from "./MainMenu";
 
 function DashBoard() {
   const [isNavOpen, setIsNavOpen] = useState(false); // nav
@@ -28,6 +26,7 @@ function DashBoard() {
         sidebarOpen={sidebarOpen}
         isNavOpen={isNavOpen}
       />
+      <MainMenu />
     </div>
   );
 }

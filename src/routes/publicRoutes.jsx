@@ -1,13 +1,17 @@
 import DashBoard from "../components/DashBoard";
-import LandingPage from "../components/LandingPage";
+import LogIn from "../components/LogIn";
 
 export const publicRoutes = [
   {
     path: "/",
-    element: <LandingPage />,
+    element: <LogIn />,
   },
   {
     path: "/dashboard",
+    element: <DashBoard />,
+  },
+  {
+    path: "#",
     element: <DashBoard />,
   },
 ];

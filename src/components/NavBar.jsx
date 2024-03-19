@@ -6,7 +6,7 @@ function NavBar({ toggleSideBar }) {
     navigate("/");
   };
   return (
-    <div className="bg-green-200 w-full shadow-lg flex flex-row items-center justify-between px-5 h-16 ">
+    <div className="bg-green-200 w-full shadow-lg flex flex-row items-center justify-between px-20 h-16 ">
       <button
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"

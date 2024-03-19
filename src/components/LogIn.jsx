@@ -12,6 +12,7 @@ function LandingPage() {
       <div className="fixed top-0 left-0">
         <a href="/">
           <img
+            width={60}
             className="md:h-20 md:w-auto -my-auto scale-50 cursor-pointer"
             src="/src/assets/images/thesis.png"
           />

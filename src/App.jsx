@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import DashBoard from "./components/DashBoard";
 import { publicRoutes } from "./routes/publicRoutes";
-import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
