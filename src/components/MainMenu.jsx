@@ -6,7 +6,7 @@ function MainMenu() {
     <div className="flex flex-row h-screen">
       <div className="bg-gray-50 flex flex-col flex-1 min-w-0">
         <div className="mt-5 border-b border-gray-300">
-          <div className="h-screen md:flex flex-cols overflow-y-scroll-hidden p-5 bg-gray-50 gap-4">
+          <div className="flex h-screen md:flex-col flex-cols overflow-y-scroll-hidden p-5 bg-gray-50 gap-4">
             <div className="w-full pb-4">
               <div className="h-auto lg:h-48 bg-white shadow-lg p-5 rounded-md ">
                 <div className="relative">
