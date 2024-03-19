@@ -33,7 +33,7 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
       >
         <div className="overflow-y-auto py-5 px-3 h-full bg-green-200 border-r border-gray-300  shadow-2xl">
           <ul className="space-y-4">
-            <span onClick={closeSidebar} className=" float-end">
+            <span onClick={closeSidebar} className="cursor-pointer float-end">
               {CloseIcon()}
             </span>
             <div className="flex pt-1 gap-4 mb-16">
