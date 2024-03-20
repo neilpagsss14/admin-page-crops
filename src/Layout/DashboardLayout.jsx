@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Side from "../components/Side";
 import NavBar from "../components/NavBar";
-import MainMenu from "./MainMenu";
 import { Outlet } from "react-router-dom";
 
-function DashBoard() {
+function DashBoardLayout() {
   const [isNavOpen, setIsNavOpen] = useState(false); // nav
 
   const [sidebarOpen, setSidebarOpen] = useState(false); // sidebar
@@ -27,9 +26,9 @@ function DashBoard() {
         sidebarOpen={sidebarOpen}
         isNavOpen={isNavOpen}
       />
-      <MainMenu />
+      <Outlet />
     </div>
   );
 }
 
-export default DashBoard;
+export default DashBoardLayout;

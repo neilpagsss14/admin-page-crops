@@ -43,69 +43,48 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
               </div>
             </div>
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className=" gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {HomeIcon()}
-                <span className="ml-3">DashBoard</span>
-              </a>
+                DashBoard
+              </span>
             </li>
 
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className=" gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {FarmersIcon()}
-                <span className="ml-3">Farmers</span>
-              </a>
+                Farmers
+              </span>
             </li>
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className="gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {CheckpointIcon()}
-                <span className="ml-3">Checkpoint Personnel</span>
-              </a>
+                Checkpoint Personnel
+              </span>
             </li>
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {DeliveriesIcon()}
-                <span className="ml-3">Deliveries</span>
-              </a>
+                Deliveries
+              </span>
             </li>
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {AnalyticsIcon()}
-                <span className="ml-3">Analytics</span>
-              </a>
+                Analytics
+              </span>
             </li>
 
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {NotificationIcon()}
-                <span className="ml-3">Notifications</span>
-              </a>
+                Notifications
+              </span>
             </li>
             <li onClick={navigateToLandingPage}>
-              <a
-                href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group"
-              >
+              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {LogOutIcon()}
-                <span className="ml-3">Logout</span>
-              </a>
+                Logout
+              </span>
             </li>
           </ul>
         </div>

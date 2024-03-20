@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { EyeIcon, SlashEyeIcon } from "../assets/svg";
 
-function LandingPage() {
+function LogIn() {
   const navigate = useNavigate();
 
   const navigateToDashBoard = () => {
     navigate("/dashboard");
   };
+
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleChange = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
     <div className="bg-green-100 flex flex-row items-center justify-around h-screen w-screen">
       <div className="fixed top-0 left-0">
@@ -14,7 +27,7 @@ function LandingPage() {
           <img
             width={60}
             className="md:h-20 md:w-auto -my-auto scale-50 cursor-pointer"
-            src="/src/assets/images/thesis.png"
+            // src="/src/assets/images/thesis.png"
           />
         </a>
       </div>
@@ -32,12 +45,22 @@ function LandingPage() {
               className="h-14 w-82 rounded-xl px-4 border-2 w-80 font-poppins"
               placeholder="Email"
             />
-            <input
-              type="password"
-              name="password"
-              className="h-14 w-82 rounded-xl px-4 border-2 w-80 mt-5 font-poppins"
-              placeholder="Password"
-            />
+            <div className="relative flex">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                value={password}
+                onChange={handleChange}
+                className="h-14 w-82 rounded-xl px-4 border-2 w-80 mt-5 font-poppins"
+                placeholder="Password"
+              />
+              <div
+                onClick={togglePasswordVisibility}
+                className="absolute top-9 right-3 cursor-pointer"
+              >
+                {showPassword ? EyeIcon() : SlashEyeIcon()}
+              </div>
+            </div>
           </div>
           <div className="flex justify-between mt-2 mb-2">
             <div className="flex">
@@ -72,4 +95,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default LogIn;

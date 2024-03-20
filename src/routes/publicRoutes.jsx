@@ -1,6 +1,7 @@
-import Layout from "../pages/Layout";
+import DashboardLayout from "../Layout/DashboardLayout";
 import LogIn from "../pages/LogIn";
-// import MainMenu from "../components/MainMenu";
+import Dashboard from "../pages/Dashboard";
+import Farmer from "../pages/Farmer";
 
 export const publicRoutes = [
   {
@@ -9,6 +10,13 @@ export const publicRoutes = [
   },
   {
     path: "/dashboard",
-    element: <Layout />,
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+    ],
   },
+  {},
 ];

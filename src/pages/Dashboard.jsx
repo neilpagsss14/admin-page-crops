@@ -1,7 +1,7 @@
 import React from "react";
 import { NotificationIcon, RecentIcon } from "../assets/svg";
 
-function MainMenu() {
+function Dashboard() {
   return (
     <div className="flex flex-row h-screen">
       <div className="bg-gray-50 flex flex-col flex-1 min-w-0">
@@ -99,4 +99,4 @@ function MainMenu() {
   );
 }
 
-export default MainMenu;
+export default Dashboard;
