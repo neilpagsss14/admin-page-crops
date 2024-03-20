@@ -73,7 +73,7 @@ function LogIn() {
           <div>
             <button
               onClick={navigateToDashBoard}
-              className="bg-green-500 hover:bg-green-700 py-3 px-10 rounded-xl text-sm font-poppins-bold hover:text-white w-full delay-1500 duration-100 ease-in-out"
+              className="bg-green-500 hover:bg-green-700 py-3 px-10 rounded-xl text-sm font-poppins-bold w-full delay-1500 duration-100 ease-in-out"
             >
               Log In
             </button>

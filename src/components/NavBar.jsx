@@ -31,7 +31,7 @@ function NavBar({ toggleSideBar }) {
           </div>
           <button
             onClick={navigateToLandingPage}
-            className="bg-green-500 hover:bg-[#F3ED59] px-5 items-center rounded-md h-10 text-sm font-poppins-bold flex"
+            className="bg-green-500 hover:bg-green-700 px-5 items-center rounded-md h-10 text-sm font-poppins-bold flex"
           >
             Track Here
           </button>

@@ -9,9 +9,9 @@ export default {
       },
     },
     screens: {
-      sm: { min: "250px", max: "430px" },
-      md: { min: "500px", max: "1024px" },
-      lg: { min: "1024px", max: "1280" },
+      sm: { min: "250px", max: "650px" },
+      md: { min: "650px", max: "1024px" },
+      lg: { min: "1024px", max: "1280px" },
       xl: { min: "1280", max: "1536" },
     },
   },

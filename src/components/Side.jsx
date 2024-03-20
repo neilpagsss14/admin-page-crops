@@ -46,45 +46,45 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
               </div>
             </div>
             <li onClick={navigateToDashboard}>
-              <span className=" gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {HomeIcon()}
                 DashBoard
               </span>
             </li>
 
             <li>
-              <span className=" gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {FarmersIcon()}
                 Farmers
               </span>
             </li>
             <li>
-              <span className="gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {CheckpointIcon()}
                 Checkpoint Personnel
               </span>
             </li>
             <li>
-              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {DeliveriesIcon()}
                 Deliveries
               </span>
             </li>
             <li>
-              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {AnalyticsIcon()}
                 Analytics
               </span>
             </li>
 
             <li>
-              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {NotificationIcon()}
                 Notifications
               </span>
             </li>
             <li onClick={navigateToLandingPage}>
-              <span className="gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {LogOutIcon()}
                 Logout
               </span>
