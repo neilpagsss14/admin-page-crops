@@ -17,6 +17,9 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
   const navigateToLandingPage = () => {
     navigate("/");
   };
+  const navigateToDashboard = () => {
+    navigate("/dashboard");
+  };
 
   // useEffect(() => {
 
@@ -42,7 +45,7 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
                 BERNA CROP
               </div>
             </div>
-            <li>
+            <li onClick={navigateToDashboard}>
               <span className=" gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-[#F3ED59] group">
                 {HomeIcon()}
                 DashBoard

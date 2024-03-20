@@ -19,15 +19,19 @@ function DashBoardLayout() {
   };
 
   return (
-    <div>
-      <NavBar toggleSideBar={toggleSideBar} />
-      <Side
-        closeSidebar={closeSidebar}
-        sidebarOpen={sidebarOpen}
-        isNavOpen={isNavOpen}
-      />
-      <Outlet />
-    </div>
+    <>
+      <div>
+        <NavBar toggleSideBar={toggleSideBar} />
+        <Side
+          closeSidebar={closeSidebar}
+          sidebarOpen={sidebarOpen}
+          isNavOpen={isNavOpen}
+        />
+        <main>
+          <Outlet />
+        </main>
+      </div>
+    </>
   );
 }
 

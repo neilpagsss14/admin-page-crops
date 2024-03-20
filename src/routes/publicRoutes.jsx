@@ -1,7 +1,6 @@
-import DashboardLayout from "../Layout/DashboardLayout";
 import LogIn from "../pages/LogIn";
 import Dashboard from "../pages/Dashboard";
-import Farmer from "../pages/Farmer";
+import DashBoardLayout from "../Layout/DashboardLayout";
 
 export const publicRoutes = [
   {
@@ -9,14 +8,13 @@ export const publicRoutes = [
     element: <LogIn />,
   },
   {
-    path: "/dashboard",
-    element: <DashboardLayout />,
+    path: "/",
+    element: <DashBoardLayout />,
     children: [
       {
-        path: "/dashboard",
+        path: "/dashboard", // Absolute path for the home page
         element: <Dashboard />,
       },
     ],
   },
-  {},
 ];
