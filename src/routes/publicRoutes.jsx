@@ -1,5 +1,6 @@
-import DashBoard from "../components/DashBoard";
+import DashBoard from "../pages/DashBoard";
 import LogIn from "../components/LogIn";
+// import MainMenu from "../components/MainMenu";
 
 export const publicRoutes = [
   {

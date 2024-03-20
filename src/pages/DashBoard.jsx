@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Side from "./Side";
-import NavBar from "./NavBar";
-import MainMenu from "./MainMenu";
+import Side from "../components/Side";
+import NavBar from "../components/NavBar";
+import MainMenu from "../components/MainMenu";
 
 function DashBoard() {
   const [isNavOpen, setIsNavOpen] = useState(false); // nav
