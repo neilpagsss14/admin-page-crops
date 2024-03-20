@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Side from "../components/Side";
 import NavBar from "../components/NavBar";
-import MainMenu from "../components/MainMenu";
+import MainMenu from "./MainMenu";
+import { Outlet } from "react-router-dom";
 
 function DashBoard() {
   const [isNavOpen, setIsNavOpen] = useState(false); // nav

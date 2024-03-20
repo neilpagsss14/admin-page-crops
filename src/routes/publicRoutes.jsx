@@ -1,5 +1,5 @@
-import DashBoard from "../pages/DashBoard";
-import LogIn from "../components/LogIn";
+import Layout from "../pages/Layout";
+import LogIn from "../pages/LogIn";
 // import MainMenu from "../components/MainMenu";
 
 export const publicRoutes = [
@@ -9,10 +9,6 @@ export const publicRoutes = [
   },
   {
     path: "/dashboard",
-    element: <DashBoard />,
-  },
-  {
-    path: "#",
-    element: <DashBoard />,
+    element: <Layout />,
   },
 ];

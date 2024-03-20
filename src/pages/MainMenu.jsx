@@ -14,7 +14,7 @@ function MainMenu() {
                     <div>
                       <span className="font-poppins text-gray-700">
                         Overall crops as of{" "}
-                        <span className="font-poppins-bold">DATE</span>
+                        <span className="font-poppins-bold"></span>
                       </span>
                     </div>
                     <div className="float-right text-right"></div>
