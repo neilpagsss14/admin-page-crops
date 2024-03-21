@@ -1,9 +1,14 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { BurgerIcon, MessageIcon, NotificationIcon } from "../assets/svg";
+import { useNavigate } from "react-router-dom";
 
 function NavBar({ toggleSideBar }) {
-  const navigateToLandingPage = () => {
-    navigate("/");
+  const navigate = useNavigate();
+  const navigateToDeliveries = () => {
+    navigate("/deliveries");
+  };
+  const navigateToNotification = () => {
+    navigate("/notification");
   };
   return (
     <div className="bg-green-200 w-full shadow-lg flex flex-row items-center justify-between px-20 h-16 ">
@@ -25,12 +30,15 @@ function NavBar({ toggleSideBar }) {
             </button>
           </div>
           <div className="cursor-pointer hover:shadow-xl">
-            <button className="bg-transparent px-2 py-2 rounded-md">
+            <button
+              onClick={navigateToNotification}
+              className="bg-transparent px-2 py-2 rounded-md"
+            >
               {NotificationIcon()}
             </button>
           </div>
           <button
-            onClick={navigateToLandingPage}
+            onClick={navigateToDeliveries}
             className="bg-green-500 hover:bg-green-700 px-5 items-center rounded-md h-10 text-sm font-poppins-bold flex"
           >
             Track Here

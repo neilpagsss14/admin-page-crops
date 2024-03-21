@@ -21,7 +21,7 @@ function LogIn() {
   };
 
   return (
-    <div className="bg-green-100 flex flex-row items-center justify-around h-screen w-screen">
+    <div className="bg-green-100 flex flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-around h-screen w-screen">
       <div className="fixed top-0 left-0">
         <a href="/">
           <img
@@ -33,7 +33,7 @@ function LogIn() {
       </div>
       <div>
         <img
-          className=" sm:h-40 h-44 md:h-72 mt-30 md:mt-0 lg:mt-0 sm:mt-0"
+          className="h-56 md:h-56 xl:h-96 lg:h-96  mt-30 md:mt-0 lg:mt-0 sm:mt-0"
           src="/src/assets/images/crops.png"
         />
       </div>

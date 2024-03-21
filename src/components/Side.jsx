@@ -19,17 +19,34 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
   };
   const navigateToDashboard = () => {
     navigate("/dashboard");
+    closeSidebar();
   };
-
-  // useEffect(() => {
-
-  // }, [showSidebar]);
+  const navigateToFarmers = () => {
+    navigate("/farmers");
+    closeSidebar();
+  };
+  const navigateToCheckpoint = () => {
+    navigate("/checkpoint");
+    closeSidebar();
+  };
+  const navigateToDeliveries = () => {
+    navigate("/deliveries");
+    closeSidebar();
+  };
+  const navigateToAnalytics = () => {
+    navigate("/analytics");
+    closeSidebar();
+  };
+  const navigateToNotification = () => {
+    navigate("/notification");
+    closeSidebar();
+  };
 
   return (
     <>
       <aside
         id="default-sidebar"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform sm:translate-x-0    ${
+        className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform sm:translate-x-0 ${
           sidebarOpen && "hidden"
         } ${!isNavOpen && "sm:-translate-x-full "}`}
         aria-label="Sidenav"
@@ -51,33 +68,32 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
                 DashBoard
               </span>
             </li>
-
-            <li>
+            <li onClick={navigateToFarmers}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {FarmersIcon()}
                 Farmers
               </span>
             </li>
-            <li>
+            <li onClick={navigateToCheckpoint}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {CheckpointIcon()}
                 Checkpoint Personnel
               </span>
             </li>
-            <li>
+            <li onClick={navigateToDeliveries}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {DeliveriesIcon()}
                 Deliveries
               </span>
             </li>
-            <li>
+            <li onClick={navigateToAnalytics}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {AnalyticsIcon()}
                 Analytics
               </span>
             </li>
 
-            <li>
+            <li onClick={navigateToNotification}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {NotificationIcon()}
                 Notifications
