@@ -10,6 +10,7 @@ function NavBar({ toggleSideBar }) {
   const navigateToNotification = () => {
     navigate("/notification");
   };
+
   return (
     <div className="bg-green-200 w-full shadow-lg flex flex-row items-center justify-between px-20 h-16 ">
       <button

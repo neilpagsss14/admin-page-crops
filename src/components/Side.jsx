@@ -8,6 +8,7 @@ import {
   HomeIcon,
   LogOutIcon,
   NotificationIcon,
+  ShutdownIcon,
 } from "../assets/svg/Icons";
 import { useNavigate } from "react-router-dom";
 
@@ -70,12 +71,11 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
             </li>
             <li onClick={navigateToFarmers}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
-                {FarmersIcon()}
-                Farmers
+                {FarmersIcon()}Farmers
               </span>
             </li>
             <li onClick={navigateToCheckpoint}>
-              <span className=" cursor-pointer gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group ">
                 {CheckpointIcon()}
                 Checkpoint Personnel
               </span>
@@ -99,13 +99,17 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
                 Notifications
               </span>
             </li>
-            <li onClick={navigateToLandingPage}>
-              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
-                {LogOutIcon()}
-                Logout
-              </span>
-            </li>
           </ul>
+          <div className="pt-24">
+            <ul>
+              <li onClick={navigateToLandingPage}>
+                <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
+                  {ShutdownIcon()}
+                  Logout
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </aside>
     </>
