@@ -6,7 +6,6 @@ import {
   DeliveriesIcon,
   FarmersIcon,
   HomeIcon,
-  LogOutIcon,
   NotificationIcon,
   ShutdownIcon,
 } from "../assets/svg/Icons";
@@ -47,7 +46,7 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
     <>
       <aside
         id="default-sidebar"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform sm:translate-x-0 ${
+        className={` transition-all fixed top-0 left-0 z-40 w-64 h-screen sm:translate-x-0 ${
           sidebarOpen && "hidden"
         } ${!isNavOpen && "sm:-translate-x-full "}`}
         aria-label="Sidenav"

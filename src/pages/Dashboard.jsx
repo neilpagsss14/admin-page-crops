@@ -4,11 +4,14 @@ import { NotificationIcon, RecentIcon } from "../assets/svg";
 function Dashboard() {
   return (
     <div className="flex flex-row h-screen">
-      <div className="bg-gray-50 flex flex-col flex-1 min-w-0">
+      <div className="flex flex-col flex-1 min-w-0  transition-all">
         <div className="mt-5 border-b border-gray-300">
-          <div className="flex h-screen sm:flex-col md:flex-row flex-cols overflow-y-scroll-hidden p-5 bg-gray-50 gap-4">
+          <div
+            className={`
+               flex h-screen sm:flex-col md:flex-row flex-cols overflow-y-scroll-hidden p-5 bg-white gap-4`}
+          >
             <div className="w-full pb-4">
-              <div className="h-auto lg:h-48 bg-white shadow-lg p-5 rounded-md ">
+              <div className="h-auto lg:h-48 bg-gray-200 shadow-lg p-5 rounded-md ">
                 <div className="relative">
                   <div className="flex-cols grid grid-cols-1 md:grid-cols-2 justify-between">
                     <div>
@@ -57,7 +60,7 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="h-auto md:h-auto bg-white shadow-xl p-5 rounded-md mt-4 ">
+              <div className="h-auto md:h-auto mt-10 bg-gray-200 shadow-lg p-5 rounded-md">
                 <div className="relative">
                   <span className="font-poppins-bold text-gray-700">
                     Transactions this week
@@ -79,7 +82,7 @@ function Dashboard() {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-4 gap-y-4 h-auto w-2/6 sm:w-[100%]">
-              <div className="bg-white h-auto shadow-lg rounded-md p-2 overflow-y-auto">
+              <div className="bg-gray-200 h-auto shadow-lg rounded-md p-2 overflow-y-auto">
                 <div className="relative">
                   <span className="flex flex-cols p-2 py-3 font-poppins-bold gap-4 border-b-2 w-full">
                     {NotificationIcon()} Notifications
@@ -89,7 +92,7 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white h-auto shadow-lg rounded-md p-2 overflow-y-auto">
+              <div className="bg-gray-200 h-auto shadow-lg rounded-md p-2 overflow-y-auto">
                 <div className="relative">
                   <span className="flex flex-cols p-2 py-3 font-poppins-bold gap-4 border-b-2 w-full">
                     {RecentIcon()} Recent Transactions

@@ -1,5 +1,5 @@
 import React from "react";
-import { CloseIcon, InfoIcon } from "../assets/svg";
+import { CloseIcon, DeleteIcon, InfoIcon } from "../assets/svg";
 
 function Notification() {
   return (
@@ -9,8 +9,8 @@ function Notification() {
         <div className="ms-3 text-sm font-poppins">
           This is an example of a NOTIFICATION
         </div>
-        <button className="ms-auto -mx-1.5 -my-1.5 bg-green-500 text-black rounded-md  hover:bg-green-700 inline-flex items-center justify-center h-8 w-8">
-          {CloseIcon()}
+        <button className="ms-auto -mx-1.5 -my-1.5 bg-green-500 text-black rounded-md  hover:bg-green-700 inline-flex items-center justify-center h-10 w-10">
+          {DeleteIcon()}
         </button>
       </div>
     </div>

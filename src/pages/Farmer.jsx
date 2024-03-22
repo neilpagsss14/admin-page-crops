@@ -13,7 +13,7 @@ function Farmer() {
         </div>
         <div className="flex items-center justify-between">
           <div className="ml-10 spacex-8 lg:ml-40">
-            <button class="flex items-end gap-2 rounded-md bg-green-500 px-4 py-2 text-sm font-poppins-bold text-black focus:outline-none focus:ring hover:bg-green-700">
+            <button class="flex items-end gap-2 rounded-md bg-green-500 px-4 py-2 text-sm font-poppins-bold text-black hover:bg-green-700">
               {DownloadIcon()}CSV
             </button>
           </div>
