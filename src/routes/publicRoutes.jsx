@@ -2,10 +2,10 @@ import LogIn from "../pages/LogIn";
 import Dashboard from "../pages/Dashboard";
 import Checkpoint from "../pages/Checkpoint";
 import Farmer from "../pages/Farmer";
-import DashBoardLayout from "../Layout/DashboardLayout";
 import Deliveries from "../pages/Deliveries";
 import Analytics from "../pages/Analytics";
 import Notification from "../pages/Notification";
+import DashBoardLayout from "../layout/DashboardLayout";
 
 export const publicRoutes = [
   {

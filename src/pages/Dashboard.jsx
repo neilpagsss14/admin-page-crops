@@ -93,7 +93,7 @@ function Dashboard() {
             <div className="grid grid-cols-1 gap-4 gap-y-4 h-auto w-2/6 sm:w-[100%]">
               <div className="bg-gray-200 h-auto shadow-lg rounded-md p-2 overflow-y-auto">
                 <div className="relative">
-                  <span className="flex flex-cols p-2 py-3 font-poppins-bold gap-4 border-b-2 w-full">
+                  <span className="flex flex-cols p-2 py-3 font-poppins-bold gap-4 border-b-2 border-gray-300 w-full">
                     {NotificationIcon()} Notifications
                   </span>
                   <div className="flex justify-center p-8 w-full font-poppins">
@@ -103,7 +103,7 @@ function Dashboard() {
               </div>
               <div className="bg-gray-200 h-auto shadow-lg rounded-md p-2 overflow-y-auto">
                 <div className="relative">
-                  <span className="flex flex-cols p-2 py-3 font-poppins-bold gap-4 border-b-2 w-full">
+                  <span className="flex flex-cols p-2 py-3 font-poppins-bold gap-4 border-b-2 border-gray-300 w-full">
                     {RecentIcon()} Recent Transactions
                   </span>
                   <div className="flex justify-center p-8 w-full font-poppins">
