@@ -61,21 +61,8 @@ function Deliveries() {
                     Ongoing
                   </span>
                 </td>
-                <td className="  bg-white px-5 py-5 text-sm flex gap-5">
-                  <span className=" cursor-pointer">{EditIcon()}</span>
-
-                  <span onClick={toggleModal} className=" cursor-pointer">
-                    {DisabledIcon()}
-                  </span>
-
-                  <td className="text-md flex font-poppins-bold">
-                    <span
-                      onClick={"/#"}
-                      className="text-green-500 hover:underline cursor-pointer"
-                    >
-                      Edit
-                    </span>
-                  </td>
+                <td className="  bg-white px-5 py-5 text-sm flex">
+                  <span className="cursor-pointer">{EditIcon()}</span>
                 </td>
               </tr>
             </tbody>
@@ -97,17 +84,8 @@ function Deliveries() {
                     Arrived
                   </span>
                 </td>
-                <td className=" bg-white px-5 py-5 text-sm flex gap-5">
+                <td className=" bg-white px-5 py-5 text-sm flex">
                   <span className="cursor-pointer">{EditIcon()}</span>
-                  <span className="ursor-pointer">{DisabledIcon()}</span>
-                  <td className="text-md flex font-poppins-bold">
-                    <span
-                      onClick={"/#"}
-                      className="text-green-500 hover:underline cursor-pointer"
-                    >
-                      Edit
-                    </span>
-                  </td>
                 </td>
               </tr>
             </tbody>
@@ -131,15 +109,6 @@ function Deliveries() {
                 </td>
                 <td className=" bg-white px-5 py-5 text-sm flex gap-5">
                   <span className="cursor-pointer">{EditIcon()}</span>
-                  <span className="ursor-pointer">{DisabledIcon()}</span>
-                  <td className="text-md flex font-poppins-bold">
-                    <span
-                      onClick={"/#"}
-                      className="text-green-500 hover:underline cursor-pointer"
-                    >
-                      Edit
-                    </span>
-                  </td>
                 </td>
               </tr>
             </tbody>
@@ -160,21 +129,8 @@ function Deliveries() {
                     Verified
                   </span>
                 </td>
-                <td className="  bg-white px-5 py-5 text-sm flex gap-5">
-                  <span className=" cursor-pointer">{EditIcon()}</span>
-
-                  <span onClick={toggleModal} className=" cursor-pointer">
-                    {DisabledIcon()}
-                  </span>
-
-                  <td className="text-md flex font-poppins-bold">
-                    <span
-                      onClick={"/#"}
-                      className="text-green-500 hover:underline cursor-pointer"
-                    >
-                      Edit
-                    </span>
-                  </td>
+                <td className="  bg-white px-5 py-5 text-sm flex">
+                  <span className=" cursor-pointer ">{EditIcon()}</span>
                 </td>
               </tr>
             </tbody>

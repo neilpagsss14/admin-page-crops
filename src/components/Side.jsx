@@ -73,12 +73,12 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
                 {FarmersIcon()}Farmers
               </span>
             </li>
-            <li onClick={navigateToCheckpoint}>
+            {/* <li onClick={navigateToCheckpoint}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-md font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group ">
                 {CheckpointIcon()}
                 Checkpoint Personnel
               </span>
-            </li>
+            </li> */}
             <li onClick={navigateToDeliveries}>
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {DeliveriesIcon()}

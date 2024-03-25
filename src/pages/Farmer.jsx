@@ -38,80 +38,84 @@ function Farmer() {
                 <th className="px-5 py-3">No.</th>
                 <th className="px-5 py-3">Farmers Name</th>
                 <th className="px-5 py-3">Status</th>
+                <th className="px-5 py-3">Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="px-5 border-b border-gray-200">
+                <td className="px-5">
                   <input type="checkbox"></input>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm ">
+                <td className="  bg-white px-5 py-5 text-sm ">
                   <p className="font-poppins">99</p>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <div className="font-poppins-bold flex items-center ">
                     Spencer D. So
                   </div>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <span className="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900 font-poppins-bold">
                     Active
                   </span>
-                  <span
-                    onClick={toggleModal}
-                    className="float-end px-2 cursor-pointer"
-                  >
+                </td>
+                <td className="  bg-white px-5 py-5 text-sm flex">
+                  <span className="cursor-pointer">{EditIcon()}</span>
+                  <span onClick={toggleModal} className="px-2 cursor-pointer">
                     {DisabledIcon()}
                   </span>
-                  <span className="float-end cursor-pointer">{EditIcon()}</span>
                 </td>
               </tr>
             </tbody>
             <tbody>
               <tr>
-                <td className="px-5 border-b border-gray-200">
+                <td className="px-5  ">
                   <input type="checkbox"></input>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-7 text-sm">
+                <td className="  bg-white px-5 py-7 text-sm">
                   <p className="font-poppins">99</p>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <div className="font-poppins-bold flex items-center ">
                     Mariene Bernasor
                   </div>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <span className="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900 font-poppins-bold">
                     Active
                   </span>
-                  <span className="float-end px-2 cursor-pointer">
+                </td>
+                <td className="  bg-white px-5 py-5 text-sm flex">
+                  <span className="cursor-pointer">{EditIcon()}</span>
+                  <span onClick={toggleModal} className="px-2 cursor-pointer">
                     {DisabledIcon()}
                   </span>
-                  <span className="float-end cursor-pointer">{EditIcon()}</span>
                 </td>
               </tr>
             </tbody>
             <tbody>
               <tr>
-                <td className="px-5 border-b border-gray-200">
+                <td className="px-5  ">
                   <input type="checkbox"></input>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <p className="font-poppins">99</p>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <div className="font-poppins-bold flex items-center ">
                     Carl Angelo Suasola
                   </div>
                 </td>
-                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                <td className="  bg-white px-5 py-5 text-sm">
                   <span className="rounded-full bg-red-400 px-3 py-1 text-xs text-green-900 font-poppins-bold">
                     Deactivated
                   </span>
-                  <span className="float-end px-2 cursor-pointer" onClick={"#"}>
+                </td>
+                <td className="  bg-white px-5 py-5 text-sm flex">
+                  <span className="cursor-pointer">{EditIcon()}</span>
+                  <span onClick={toggleModal} className="px-2 cursor-pointer">
                     {DisabledIcon()}
                   </span>
-                  <span className="float-end cursor-pointer">{EditIcon()}</span>
                 </td>
               </tr>
             </tbody>
