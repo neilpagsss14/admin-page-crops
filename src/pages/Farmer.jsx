@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { DisabledIcon, DownloadIcon, EditIcon } from "../assets/svg";
-import Modal from "../components/Modal";
 import DisableFarmerModal from "../assets/modal/DisableFarmerModal";
 
 function Farmer() {
