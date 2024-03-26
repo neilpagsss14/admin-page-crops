@@ -2,11 +2,13 @@ import React from "react";
 import { NotificationIcon, RecentIcon } from "../assets/svg";
 
 function Dashboard() {
-  const currentDate = new Date().toLocaleDateString("en-US", {
+  const currentDateTime = new Date().toLocaleString("en-US", {
     weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
   });
 
   return (
@@ -23,9 +25,9 @@ function Dashboard() {
                   <div className="flex-cols grid grid-cols-1 md:grid-cols-2 justify-between">
                     <div>
                       <span className="font-poppins text-gray-700">
-                        Overall crops as of{" "}
+                        Overall crops as of
                         <span className="font-poppins-bold text-black">
-                          {currentDate}
+                          {" " + currentDateTime}
                         </span>
                       </span>
                     </div>
@@ -44,7 +46,7 @@ function Dashboard() {
                     </div>
                     <div className="flex flex-col items-center justify-center cursor-pointer gap-2">
                       <span className="flex flex-row text-4xl font-poppins-bold ">
-                        5
+                        0
                       </span>
                       <span className="font-poppins text-gray-600 text-sm">
                         UPCOMING
@@ -52,7 +54,7 @@ function Dashboard() {
                     </div>
                     <div className="flex flex-col items-center justify-center cursor-pointer gap-2">
                       <span className="flex flex-row text-4xl font-poppins-bold ">
-                        15
+                        0
                       </span>
                       <span className="font-poppins text-gray-600 text-sm">
                         COMPLETED
@@ -60,7 +62,7 @@ function Dashboard() {
                     </div>
                     <div className="flex flex-col items-center justify-center cursor-pointer gap-2">
                       <span className="flex flex-row text-4xl font-poppins-bold ">
-                        25
+                        0
                       </span>
                       <span className="font-poppins text-gray-600 text-sm">
                         VERIFIED

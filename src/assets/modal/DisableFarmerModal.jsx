@@ -15,7 +15,7 @@ function DisableFarmerModal({ showModal, toggleModal }) {
           type="button"
           className="text-white bg-green-600 hover:bg-green-800 mr-6 font-poppins rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center"
         >
-          Yes, I'm sure
+          No, Cancel
         </button>
         <button
           dataModalHide="popup-modal"
