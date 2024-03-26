@@ -8,6 +8,7 @@ import {
   HomeIcon,
   NotificationIcon,
   ShutdownIcon,
+  LogsIcon,
 } from "../assets/svg/Icons";
 import { useNavigate } from "react-router-dom";
 
@@ -39,6 +40,10 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
   };
   const navigateToNotification = () => {
     navigate("/notification");
+    closeSidebar();
+  };
+  const navigateToFarmerLogs = () => {
+    navigate("/farmer-logs");
     closeSidebar();
   };
 
@@ -96,6 +101,12 @@ function Side({ closeSidebar, sidebarOpen, isNavOpen }) {
               <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
                 {NotificationIcon()}
                 Notifications
+              </span>
+            </li>
+            <li onClick={navigateToFarmerLogs}>
+              <span className=" cursor-pointer gap-4 flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black font-poppins-bold hover:bg-green-700 group">
+                {LogsIcon()}
+                Farmer Logs
               </span>
             </li>
           </ul>

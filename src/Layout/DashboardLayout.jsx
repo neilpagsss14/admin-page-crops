@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 function DashBoardLayout() {
   const [isNavOpen, setIsNavOpen] = useState(false); // nav
 
-  const [sidebarOpen, setSidebarOpen] = useState(true); // sidebar
+  const [sidebarOpen, setSidebarOpen] = useState(false); // sidebar
 
   const toggleSideBar = () => {
     setIsNavOpen(!isNavOpen);

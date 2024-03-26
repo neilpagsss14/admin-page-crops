@@ -6,6 +6,7 @@ import Deliveries from "../pages/Deliveries";
 import Analytics from "../pages/Analytics";
 import Notification from "../pages/Notification";
 import DashBoardLayout from "../layout/DashboardLayout";
+import FarmerLogs from "../pages/FarmerLogs";
 
 export const publicRoutes = [
   {
@@ -69,6 +70,16 @@ export const publicRoutes = [
       {
         path: "/notification",
         element: <Notification />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <DashBoardLayout />,
+    children: [
+      {
+        path: "/farmer-logs",
+        element: <FarmerLogs />,
       },
     ],
   },
