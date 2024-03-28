@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { DisabledIcon, DownloadIcon, EditIcon } from "../assets/svg";
 import DisableFarmerModal from "../assets/modal/DisableFarmerModal";
+import EditFarmerModal from "../assets/modal/EditFarmerModal";
 
 function Deliveries() {
   const [showModal, setShowModal] = useState(false);
@@ -17,7 +18,6 @@ function Deliveries() {
   });
   return (
     <div className="px-5 py-5 sm:px-2">
-      {<DisableFarmerModal toggleModal={toggleModal} showModal={showModal} />}
       <div className="flex items-center max-w-screen-lg py-8 sm:px-8 justify-between">
         <div>
           <h2 className="font-poppins-bold text-gray-700">Order Tracker</h2>

@@ -1,17 +1,30 @@
 import React, { useState } from "react";
 import { DisabledIcon, DownloadIcon, EditIcon } from "../assets/svg";
 import DisableFarmerModal from "../assets/modal/DisableFarmerModal";
+import EditFarmerModal from "../assets/modal/EditFarmerModal";
 
 function Farmer() {
-  const [showModal, setShowModal] = useState(false);
+  const [showDisableModal, setShowDisableModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
 
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const toggleDisableModal = () => {
+    setShowDisableModal(!showDisableModal);
+  };
+
+  const toggleEditModal = () => {
+    setShowEditModal(!showEditModal);
   };
 
   return (
     <div className="px-5 py-5 sm:px-2">
-      {<DisableFarmerModal toggleModal={toggleModal} showModal={showModal} />}
+      <DisableFarmerModal
+        toggleModal={toggleDisableModal}
+        showModal={showDisableModal}
+      />
+      <EditFarmerModal
+        toggleModal={toggleEditModal}
+        showModal={showEditModal}
+      />
       <div className="flex items-center max-w-screen-lg py-8 sm:px-8 justify-between">
         <div>
           <h2 className="font-poppins-bold text-gray-700">Farmer Accounts</h2>
@@ -60,8 +73,13 @@ function Farmer() {
                   </span>
                 </td>
                 <td className="  bg-white px-5 py-5 text-sm flex">
-                  <span className="cursor-pointer">{EditIcon()}</span>
-                  <span onClick={toggleModal} className="px-2 cursor-pointer">
+                  <span onClick={toggleEditModal} className="cursor-pointer">
+                    {EditIcon()}
+                  </span>
+                  <span
+                    onClick={toggleDisableModal}
+                    className="px-2 cursor-pointer"
+                  >
                     {DisabledIcon()}
                   </span>
                 </td>
@@ -87,9 +105,7 @@ function Farmer() {
                 </td>
                 <td className="  bg-white px-5 py-5 text-sm flex">
                   <span className="cursor-pointer">{EditIcon()}</span>
-                  <span onClick={toggleModal} className="px-2 cursor-pointer">
-                    {DisabledIcon()}
-                  </span>
+                  <span className="px-2 cursor-pointer">{DisabledIcon()}</span>
                 </td>
               </tr>
             </tbody>
@@ -113,9 +129,7 @@ function Farmer() {
                 </td>
                 <td className="  bg-white px-5 py-5 text-sm flex">
                   <span className="cursor-pointer">{EditIcon()}</span>
-                  <span onClick={toggleModal} className="px-2 cursor-pointer">
-                    {DisabledIcon()}
-                  </span>
+                  <span className="px-2 cursor-pointer">{DisabledIcon()}</span>
                 </td>
               </tr>
             </tbody>
