@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-
-import { DisabledIcon, DownloadIcon, EditIcon } from "../assets/svg";
-import DisableFarmerModal from "../assets/modal/DisableFarmerModal";
-import EditFarmerModal from "../assets/modal/EditFarmerModal";
+import { EditIcon } from "../assets/svg";
+import EditCropsModal from "../assets/modal/EditCropsModal";
 
 function Deliveries() {
-  const [showModal, setShowModal] = useState(false);
+  const [showEditCropsModal, setShowEditCropsModal] = useState(false);
 
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const toggleEditCropsModal = () => {
+    setShowEditCropsModal(!showEditCropsModal);
   };
-
   const currentDateshort = new Date().toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -18,6 +15,10 @@ function Deliveries() {
   });
   return (
     <div className="px-5 py-5 sm:px-2">
+      <EditCropsModal
+        showModal={showEditCropsModal}
+        toggleModal={toggleEditCropsModal}
+      />
       <div className="flex items-center max-w-screen-lg py-8 sm:px-8 justify-between">
         <div>
           <h2 className="font-poppins-bold text-gray-700">Order Tracker</h2>
@@ -62,7 +63,12 @@ function Deliveries() {
                   </span>
                 </td>
                 <td className="  bg-white px-5 py-5 text-sm flex">
-                  <span className="cursor-pointer">{EditIcon()}</span>
+                  <span
+                    onClick={toggleEditCropsModal}
+                    className="cursor-pointer"
+                  >
+                    {EditIcon()}
+                  </span>
                 </td>
               </tr>
             </tbody>
